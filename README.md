@@ -26,7 +26,7 @@ The challenge was designed for both desktop and mobile screen users.
 
 ### Links
 -Solution URL:[Github](https://github.com/MUBARAHKAH/fylo-landing-page-with-column.git)
--Live Site URL:[Livesite](https://mubarahkah.github.io/Hudle-Landing-Page/)
+-Live Site URL:[Livesite](https://mubarahkah.github.io/fylo-landing-page-with-column/)
 
 ## My process
 
