@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/*-------Root------*/
+/*----------------*/
+:root{
+  --para-blue: hsl(243, 87%, 12%);
+  --early-blue:hsl(238, 22%, 44%);
+  --btn-blue: hsl(224, 93%, 58%);
+  --fylo-cyan: hsl(170, 45%, 43%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --email-blue: hsl(0, 0%, 75%);
+  }
+/*-------html------*/
+/*----------------*/
+h2,h3,h4,a,nav{
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  }
+
+h2,h3,h4{
+  color: var(--para-blue);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h4{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--para-blue);
+}
+
+a:hover{
+  border-bottom: 2px solid var(--fylo-cyan);
+  padding-bottom: 2px;
+  color: var(--btn-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+i{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  padding-top: 4px;
+  padding-right: 5px;
+  color: #fff;
+  font-size: 12px;
+  background-color: var(--fylo-cyan);
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p{
+  color: var(--para-blue);
+  font-weight: 400;
+}
+/*-------body------*/
+/*----------------*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin: auto;
+  line-height: 1.5em;
+}
+/*-------header------*/
+/*----------------*/
+header .content{
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+header .fylo-logo{
+  width: 100px;
+}
+
+header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  color: var(--para-blue);
+}
+aside{
+background: url('./images/bg-curve-mobile.svg');
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+background-clip: content-box;
+}
+/*-------main style------*/
+/*----------------------*/
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main .card{
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*-------section-access------*/
+/*--------------------------*/
+ .access .content{
+  margin-top: 100px;
+}
+
+form .error-message,
+.success-message{
+  display: none;
+}
+
+form .error-message{
+  color: red;
+  font-size: 12px;
+}
+
+form .success-message{
+  color: green;
+  font-size: 12px;
+}
+
+input{
+  width: 100%;
+  border: 1px solid var(--para-blue);
+  background-color: #fff;
+  padding:15px;
+  opacity: 0.4;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+[type="submit"]{
+  width: 100%;
+  color: #fff;
+  background-color: var(--btn-blue);
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid{
+  border: 2px solid red;
+}
+
+input:not(:placeholder-shown):not(:focus):valid{
+  border: 2px solid green;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid + .error-message,
+input:not(:placeholder-shown):not(:focus):valid + .error-message +.success-message{
+  display: block;
+}
+
+/*-------section-productive--*/
+/*---------------------------*/
+.productive-content p{
+  text-align: left;
+  padding-bottom: 20px;
+  opacity: 0.5;
+}
+
+span{
+  margin-top: 10px;
+}
+
+.fylo-works{
+  color:  var(--fylo-cyan);
+  position: relative;
+  top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(  --fylo-cyan);
+}
+
+div .avatar-content{
+  margin-top: 90px;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  position: relative;
+  font-size: 14px;
+  box-shadow: 5px 5px 5px 2px hsl(208, 11%, 55%);
+}
+
+.avatar-content p{
+  opacity: 1;
+}
+
+.avatar-content .quotes{
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+.avatar-content .avatar-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.avatar-testimonal{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 15px;
+}
+.avatar-details{
+  text-align: left;
+  font-size: 12px;
+}
+
+/*-------section-early-access-*/
+/*---------------------------*/
+ .early-access{
+  text-align: center;
+  margin-top: 0;
+  background-color: var(--early-blue);
+  padding: 60px;
+}
+
+.early-content
+.heading-early,
+.para-early{
+  color: #fff;
+}
+.para-early{
+  opacity: 0.8;
+}
+input:last-of-type{
+  background-color: #fff;
+  opacity: 0.9;
+}
+/*-------footer------*/
+/*----------------------*/
+footer{
+  background-color:var(--para-blue);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 70px;
+  color: #fff;
+  text-align: left;
+}
+
+footer div{
+  margin-bottom: 50px;
+}
+
+footer ul{
+  list-style: none;
+  line-height: 2em;
+}
+
+footer img{
+  padding-right: 20px;
+}
+
+footer a{
+  color: #fff;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.icon:nth-of-type(1){
+  background: url('images/facebook.png');
+}
+
+.icon:nth-of-type(2){
+  background: url('images/twitter.png');
+}
+
+.icon:nth-of-type(3){
+  background: url('images/instagram.png');
+}
+
+  .icon:nth-of-type(1),
+  .icon:nth-of-type(2),
+  .icon:nth-of-type(3){
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+  background-size: contain;
+  background-size: 20px;
+}
+
+.social-icon-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.fylo-logo2{
+  filter: brightness(0) invert(1);
+  margin-bottom: 15px;
+}
+
+i{
+  padding-left: 5px;
+}
+
+@media(min-width: 1230px) {
+
+  /*..header..*/
+  header nav{
+    gap: 50px;
+  }
+
+  header .content{
+  font-size: 16px;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+
+  header .fylo-logo{
+  width: 150px;
+  }
+
+/*..sections..*/
+main .card{
+  width: 100%;
+  padding: 100px;
+  font-size: 16px;
+}
+
+h2, h3{
+  font-size: 25px;
+}
+.card .content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: -40px;
+  grid-gap: 30px;
+  }
+
+div .avatar-content{
+  font-size: 18px;
+  padding: 50px;
+  }
+
+.early-access{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  grid-gap: 250px;
+  padding: 100px;
+  font-size: 16px;
+  }
+
+.early-access form{
+  display: block;
+  }
+
+.card .content .access-content{
+  text-align: left;
+  order: -1;
+  padding: 30px;
+  }
+
+form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  }
+
+.call-to-action{
+  padding: 20px;
+  width: 50%;
+}
+
+form input:first-of-type{
+  width: 100%;
+}
+
+input:last-of-type{
+  width: 90%;
+  padding: 20px;
+  }
+
+.productive{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  position: relative;
+  top: 60px;
+  bottom: 100px;
+  }
+
+.productive .productive-content{
+  text-align: left;
+  order: -1;
+  padding: 30px;
+  }
+
+.illustration-img2{
+  max-width: 200%;
+  margin-top: 50px
+  }
+  .avatar-content p{
+    font-size: 14px;
+  }
+/*...footer..*/
+footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 16px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+footer .position{
+  position: relative;
+  top: 70px;
+}
+}
+
+@media (max-width: 375px){
+  main .card{
+    width: 90%;
+  }
+
+header .content{
+  gap: 30px;
+}
+
+header ul{
+  gap: 10px;
+}
+
+.early-access{
+  padding: 40px;
+}
+
+
+}
